@@ -19,7 +19,7 @@ The project is designed to practice core web development concepts such as layout
 - HTML5
 - CSS3
 
- No CSS frameworks (Bootstrap, Tailwind, etc.) were used.
+⚠️ No CSS frameworks (Bootstrap, Tailwind, etc.) were used.
 
 ---
 
@@ -66,4 +66,4 @@ Software Engineering Student
 ---
 
 ## © Copyright
-© 2025 Your Full Name. All rights reserved.
+© 2025 Frehiwet Zerihun. All rights reserved.
