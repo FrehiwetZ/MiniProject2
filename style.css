@@ -148,3 +148,12 @@ section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #cbd5f5;
+    font-family: inherit;
+}
+
