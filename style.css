@@ -9,3 +9,20 @@ body {
     background-color: #f1f5f9;
     color: #0f172a;
 }
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 10px;
+    color: #94a3b8;
+    font-size: 18px;
+}
