@@ -1,76 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Frehiwet Zerihun | Software Engineer & Data Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
-    <header>
-        <h1>Frehiwet Zerihun</h1>
-        <p>Software Engineering Student</p>
-    </header>
-
-    
-    <section>
-        <div class="profile">
-            <img src="Fre's.JPG" alt="Profile Image">
-            <div class="bio">
-                <h2>About Me</h2>
-                <p>
-                    I am a passionate software engineering student interested in web development,
-                    problem-solving, and building user-friendly applications.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Java</div>
-        </div>
-    </section>
-
-    <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <h3>Water Monitoring System</h3>
-            <p>Tracks water usage and sends monthly reports via SMS.</p>
-        </div>
-        <div class="project-card">
-            <h3>Chatbot System</h3>
-            <p>A simple chatbot developed for answering user queries.</p>
-        </div>
-        <div class="project-card">
-            <h3>Data Analysis Project</h3>
-            <p>Performed data visualization and analysis using Python.</p>
-        </div>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">FZ Portfolio</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
-</section>
+  </div>
+</nav>
 
-    <section>
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="4" placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+<main>
+  <!-- Hero Section with updated bright title -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge"><i class="fas fa-bolt"></i> building impactful tech</span>
+          <h1>Frehiwet Zerihun</h1>
+          <div class="hero-title">
+            Software Developer | Data Science Enthusiast | Problem Solver
+          </div>
+          <p class="hero-desc">
+            I am a passionate and detail-oriented technology student with a strong interest in software development, data science, and problem-solving. 
+            I enjoy building practical projects, learning new technologies, and turning ideas into real solutions that create value. 
+            I am committed to continuous growth, teamwork, and using technology to make everyday systems smarter and more efficient.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#projects" class="btn-primary"><i class="fas fa-arrow-down"></i> Explore work</a>
+            <a href="#contact" class="btn-outline"><i class="fas fa-paper-plane"></i> Contact me</a>
+          </div>
         </div>
-    </section>
+        <div class="hero-avatar">
+          <div class="avatar-circle">
+            <img src="Fre's.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    
-    <footer>
-        <p>>© 2026 Frehiwet Zerihun</p>
-    </footer>
+  <!-- Projects Section (your original projects) -->
+  <section id="projects" class="project-section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- 1. Hotel Reservation System -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-hotel"></i></div>
+          <h3>Hotel Reservation System</h3>
+          <div class="tech-tag">Java / Spring</div>
+          <div class="tech-tag">MySQL</div>
+          <p class="project-desc">Full-featured hotel booking and management platform with room availability, online reservations, and user dashboard. Streamlines check-in/check-out process.</p>
+          <div class="card-footer">
+            <a href="https://github.com/Joelorbit/Hotel-Reservation-System.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> GitHub repo <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Tic Tac Toe game -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+          <h3>Tic Tac Toe</h3>
+          <div class="tech-tag">JavaScript</div>
+          <div class="tech-tag">HTML/CSS</div>
+          <p class="project-desc">Interactive classic Tic-Tac-Toe game with clean UI, two-player mode, win detection, and smooth animations. Built with modular front-end logic.</p>
+          <div class="card-footer">
+            <a href="https://github.com/FrehiwetZ/Datascience-Bootcamp-Projects/tree/main/Tic-Tac-Toe%20game" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> View Code <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Titanic Pandas Analysis -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Titanic Pandas Analysis</h3>
+          <div class="tech-tag">Python</div>
+          <div class="tech-tag">Pandas</div>
+          <div class="tech-tag">Matplotlib</div>
+          <p class="project-desc">Deep exploratory data analysis on Titanic dataset. Cleaned data, visualized survival patterns, and extracted insights using statistical summaries.</p>
+          <div class="card-footer">
+            <a href="https://github.com/FrehiwetZ/Datascience-Bootcamp-Projects/tree/main/Titanic_Pandas_analysis" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> GitHub repo <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Statistical Engine Analysis -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-square-root-variable"></i></div>
+          <h3>Statistical Engine</h3>
+          <div class="tech-tag">Python</div>
+          <div class="tech-tag">NumPy/SciPy</div>
+          <p class="project-desc">Statistical computation engine providing descriptive statistics, hypothesis testing, regression analysis, and automated summary reports.</p>
+          <div class="card-footer">
+            <a href="https://github.com/FrehiwetZ/Datascience-Bootcamp-Projects/tree/main/Statistical%20Thinking/statistical_engine" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> Explore engine <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. Reverse String -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-arrow-right-arrow-left"></i></div>
+          <h3>Reverse String</h3>
+          <div class="tech-tag">Python</div>
+          <div class="tech-tag">Algorithms</div>
+          <p class="project-desc">Efficient string reversal algorithm with multiple approaches (iterative, slicing, recursion). Great for demonstrating problem-solving fundamentals.</p>
+          <div class="card-footer">
+            <a href="https://github.com/FrehiwetZ/Datascience-Bootcamp-Projects/tree/main/Reverse%20String" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> View on GitHub <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. Fibonacci Sequence -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-infinity"></i></div> 
+          <h3>Fibonacci Generator</h3>
+          <div class="tech-tag">Python</div>
+          <div class="tech-tag">Dynamic Programming</div>
+          <p class="project-desc">Generate Fibonacci sequence efficiently using iterative, recursive, and memoization techniques. Visual representation and time complexity analysis.</p>
+          <div class="card-footer">
+            <a href="https://github.com/FrehiwetZ/Datascience-Bootcamp-Projects/tree/main/Fibonacci%20sequence" target="_blank" rel="noopener noreferrer" class="repo-link">
+              <i class="fab fa-github"></i> Code & tests <i class="fas fa-external-link-alt" style="font-size: 0.7rem;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (updated list as requested) -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-section">
+        <h2 style="font-size: 1.8rem; font-weight: 800;">Technical Arsenal ⚙️</h2>
+        <div class="skills-badge-container">
+          <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+          <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+          <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+          <span class="skill-badge"><i class="fas fa-code"></i> Web Development</span>
+          <span class="skill-badge"><i class="fas fa-chart-line"></i> Data Analysis</span>
+          <span class="skill-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+          <span class="skill-badge"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <i class="fas fa-envelope-open-text" style="font-size: 2.5rem; color: #3B82F6; margin-bottom: 0.5rem; display: inline-block;"></i>
+        <h2 style="font-size: 1.8rem; margin-top: 0.25rem;">Let’s connect</h2>
+        <p style="color: #475569; max-width: 500px; margin: 0.5rem auto;">Have a project in mind or just want to collaborate? Reach out anytime.</p>
+        <div class="contact-links">
+          <a href="mailto:papsye30@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i> papsye30@gmail.com
+          </a>
+          <a href="https://github.com/FrehiwetZ" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <i class="fab fa-github"></i> github.com/FrehiwetZ
+          </a>
+          <a href="https://t.me/Papsz1" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <i class="fab fa-telegram-plane"></i> @Papsz1
+          </a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.85rem;"><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia · Open for opportunities</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Frehiwet Zerihun — Building solutions that matter. <i class="fas fa-heart"></i></p>
+  </div>
+</footer>
 
 </body>
 </html>
